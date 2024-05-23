@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+
+    <!-- Change this to your name-->
+    <meta name="author" content="wanhuawu">
+
+    <title>TOKYO MIX</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="/index.bfa1d38c.css">
+
+    <style>#cards-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.card {
+  flex-direction: column;
+  flex: 0 calc(25% - 20px);
+  align-items: flex-start;
+  display: flex;
+}
+
+.card-image {
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.text-below-image {
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.song-name {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.duration {
+  text-align: left;
+}
+
+.year-recorded {
+  margin-left: 100px;
+}
+
+.info-container {
+  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+}
+
+#menu {
+  justify-content: flex-start;
+  display: flex;
+}
+
+#add-artist-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #f05454;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+  padding: 10px 15px;
+}
+
+.subtitle {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.email-group {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+#newsletter-form input[type="email"] {
+  width: 17em;
+}
+
+</style>
+  </head>
+  <body>
+    <header>
+      <!-- Change this to your App's info -->
+      <h1 style="text-align: center">TOKYO NEW MIX</h1>
+      <p style="text-align: center">A taste of Tokyo new mixture music</p>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+
+    <hr>
+
+    <main>
+      <!-- <div id="product-card">
+        <div class="image-container">
+          <img src="King Gnu-白日.jpg" alt="白日" class="product-image" />
+          <div class="text-below-image">
+            <h3 class="song-name">白日</h3>
+            <time class="year-recorded">2020</time>
+            <span class="duration">279</span>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="King Gnu-SPECIALZ.jpg" alt="SPECIALZ" class="product-image" />
+          <div class="text-below-image">
+            <h3 class="song-name">SPECIALZ</h3>
+            <time class="year-recorded">2023</time>
+            <span class="duration">241</span>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="Yoasobi-Idol.png" alt="Idol" class="product-image" />
+          <div class="text-below-image">
+            <h3 class="song-name">Idol</h3>
+            <time class="year-recorded">2023</time>
+            <span class="duration">225</span>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="Vaundy-踊り子.jpeg" alt="踊り子" class="product-image" />
+          <div class="text-below-image">
+            <h3 class="song-name">踊り子</h3>
+            <time class="year-recorded">2021</time>
+            <span class="duration">201</span>
+          </div>
+        </div>
+      </div> -->
+
+      <h2 id="selected-artist">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+      <div id="cards-container">
+        <!-- Dynamically create your song cards here -->
+      </div>
+    </main>
+    <!-- newsletter -->
+    <footer>
+      <form id="newsletter-form" action="https://httpbin.org/post" method="post">
+        <h2>Join our newsletter</h2>
+        <h4 class="subtitle">keep updated with our new content</h4>
+        <div class="email-group">
+          <input type="email" id="email" name="email" placeholder="tokyonewmix@gmail.com" required="">
+          <button type="submit">Subscribe</button>
+        </div>
+        <p id="message"></p>
+      </form>
+    </footer>
+
+    <!-- JavaScript Data Files -->
+    <script src="/index.b040860f.js"></script>
+    <script src="/index.72f6a3a7.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="/index.8f0c9192.js"></script>
+  <script src="/assignment-5.59712999.js"></script></body>
+</html>
